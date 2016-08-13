@@ -1,0 +1,1631 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Farmhand a Agriculture Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Farmhand Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<!-- //js -->
+
+<!-- animation-effect -->
+<link href="css/animate.min.css" rel="stylesheet"> 
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.leanModal.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ <!-- iCheck -->
+  <link rel="stylesheet" href="css/blue.css">
+
+  <!-- iCheck -->
+<script src="js/icheck.min.js"></script>
+<!--<script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%' // optional
+    });
+  });
+</script>-->
+  
+  
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smooth-scrolling -->
+
+
+<!--modal -->
+  <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+  function validateForm(){
+		var x = document.forms["LoginForm"]["email"].value;
+		if(x==null||x=="")
+			alert("Fill out the email");
+		return false;	
+	}
+  
+  </script>
+  
+  
+<!-- modal end -->
+
+<!-- popup js-->
+<script>
+
+$(function() {
+    //----- OPEN
+    $('[data-popup-open]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-open');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+ 
+        e.preventDefault();
+    });
+ 
+    //----- CLOSE
+    $('[data-popup-close]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+ 
+        e.preventDefault();
+    });
+});
+
+</script>
+<!-- popup js end -->
+
+
+
+<!-- sign in 
+<script>
+$(function() {
+$("#modal_trigger").leanModal({
+        top: 100,
+        overlay: 0.6,
+        closeButton: ".modal_close"
+});
+
+
+        // Calling Login Form
+        $("#login_form").click(function() {
+                $(".social_login").hide();
+                $(".user_login").show();
+                return false;
+        });
+
+        // Calling Register Form
+        $("#register_form").click(function() {
+                $(".social_login").hide();
+                $(".user_register").show();
+                $(".header_title").text('Register');
+                return false;
+        });
+
+        // Going back to Social Forms
+        $(".back_btn").click(function() {
+                $(".user_login").hide();
+                $(".user_register").hide();
+                $(".social_login").show();
+                $(".header_title").text('Login');
+                return false;
+        });
+});
+</script>-->
+<!-- sign in end -->
+
+<!-- autocomplete -->
+
+
+  <script>
+  $(function() {
+    var availableTags = [
+      "acre",
+	"acreage",
+	"agriculture",
+	"animals",
+	"bale of hay",
+	"barn",
+	"bee",
+	"beehive",
+	"smart",
+	"sensors",
+	"drones",
+	"insecticide",
+	"irrigation",
+	"weeds",
+	"wheat",
+	"windmill",
+	"tractor",
+	"trough",
+	"reap",
+	"rice",
+	"ripe",
+	"roost",
+	"poultry"
+	];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+
+<!-- autocomplete end -->
+
+
+<!-- search js-->
+ <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ <!-- <link rel="stylesheet" href="/resources/demos/style.css">-->
+
+
+
+<script>
+$(function () {
+    $('a[href="#search"]').on('click', function(event) {
+        event.preventDefault();
+        $('#search').addClass('open');
+        $('#search > form > input[type="search"]').focus();
+    });
+    
+    $('#search, #search button.close').on('click keyup', function(event) {
+        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+            $(this).removeClass('open');
+        }
+    });
+    
+    
+    //Do not include! This prevents the form from submitting for DEMO purposes only!
+    $('form').submit(function(event) {
+        event.preventDefault();
+        return false;
+    })
+});
+
+</script>
+<!-- search js end-->
+
+
+
+
+<!-- sign in -->
+<style>
+body {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;
+        color: #666;
+}
+
+.centralize
+{
+	text-align: center;
+	margin-top:25px;
+	opacity: 0.8;
+	
+}
+
+
+
+h1 {
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 60px;
+}
+
+#lean_overlay {
+        position: fixed;
+        z-index: 100;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        display: none;
+}
+
+.popupContainer {
+        position: absolute;
+        width: 330px;
+        height: auto;
+        left: 45%;
+        top: 60px;
+        background: #FFF;
+}
+
+#modal_trigger {
+        margin: 40px auto;
+        width: 200px;
+        display: block;
+        border: 1px solid #DDD;
+        border-radius: 4px;
+}
+
+.btn {
+        padding: 10px 20px;
+        background: #F4F4F2;
+}
+
+.btn_red {
+        background: #ED6347;
+        color: #FFF;
+}
+
+.btn:hover {
+        background: #E4E4E2;
+}
+
+.btn_red:hover {
+        background: #C12B05;
+}
+
+a.btn {
+        color: #666;
+        text-align: center;
+        text-decoration: none;
+}
+
+a.btn_red {
+        color: #FFF;
+}
+
+.one_half {
+        width: 50%;
+        display: block;
+        float: left;
+}
+
+.one_half.last {
+        width: 45%;
+        margin-left: 5%;
+}
+/* Popup Styles*/
+
+.popupHeader {
+        font-size: 16px;
+        text-transform: uppercase;
+}
+
+.popupHeader {
+        background: #F4F4F2;
+        position: relative;
+        padding: 10px 20px;
+        border-bottom: 1px solid #DDD;
+        font-weight: bold;
+}
+
+.popupHeader .modal_close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px 15px;
+        background: #E4E4E2;
+        cursor: pointer;
+        color: #aaa;
+        font-size: 16px;
+}
+
+.popupBody {
+        padding: 20px;
+}
+/* Social Login Form */
+
+.social_login {}
+
+.social_login .social_box {
+        display: block;
+        clear: both;
+        padding: 10px;
+        margin-bottom: 10px;
+        background: #F4F4F2;
+        overflow: hidden;
+}
+
+.social_login .icon {
+        display: block;
+        width: 10px;
+        padding: 5px 10px;
+        margin-right: 10px;
+        float: left;
+        color: #FFF;
+        font-size: 16px;
+        text-align: center;
+}
+
+.social_login .fb .icon {
+        background: #3B5998;
+}
+
+.social_login .google .icon {
+        background: #DD4B39;
+}
+
+.social_login .icon_title {
+        display: block;
+        padding: 5px 0;
+        float: left;
+        font-weight: bold;
+        font-size: 16px;
+        color: #777;
+}
+
+.social_login .social_box:hover {
+        background: #E4E4E2;
+}
+
+.centeredText {
+        text-align: center;
+        margin: 20px 0;
+        clear: both;
+        overflow: hidden;
+        text-transform: uppercase;
+}
+
+.action_btns {
+        clear: both;
+        overflow: hidden;
+}
+
+.action_btns a {
+        display: block;
+}
+/* User Login Form */
+
+.user_login {
+        display: none;
+}
+
+.user_login label {
+        display: block;
+        margin-bottom: 5px;
+}
+
+.user_login input[type="text"],
+.user_login input[type="email"],
+.user_login input[type="password"] {
+        display: block;
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #DDD;
+        color: #666;
+}
+
+.user_login input[type="checkbox"] {
+        float: left;
+        margin-right: 5px;
+}
+
+.user_login input[type="checkbox"]+label {
+        float: left;
+}
+
+.user_login .checkbox {
+        margin-bottom: 10px;
+        clear: both;
+        overflow: hidden;
+}
+
+.forgot_password {
+        display: block;
+        margin: 20px 0 10px;
+        clear: both;
+        overflow: hidden;
+        text-decoration: none;
+        color: #ED6347;
+}
+/* User Register Form */
+
+.user_register {
+        display: none;
+}
+
+.user_register label {
+        display: block;
+        margin-bottom: 5px;
+}
+
+.user_register input[type="text"],
+.user_register input[type="email"],
+.user_register input[type="password"] {
+        display: block;
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #DDD;
+        color: #666;
+}
+
+.user_register input[type="checkbox"] {
+        float: left;
+        margin-right: 5px;
+}
+
+.user_register input[type="checkbox"]+label {
+        float: left;
+}
+
+.user_register .checkbox {
+        margin-bottom: 10px;
+        clear: both;
+        overflow: hidden;
+}
+</style>
+<!-- sign in end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--popup style-->
+
+ <style>
+ 
+  .popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+ 
+/* Inner */
+.popup-inner {
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+ 
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+ 
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+ 
+ 
+ 
+ </style>
+
+<!--popup style end -->
+
+
+<!-- search style-->
+
+<style>
+
+
+#search {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    
+    opacity: 0;
+}
+
+#search.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+	-o-transform: translate(0px, 0px) scale(1, 1);
+	-ms-transform: translate(0px, 0px) scale(1, 1);
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+}
+
+#search input[type="search"] {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+#search .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 61px;
+    margin-left: -45px;
+}
+#search .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+	background-color: #428bca;
+	border-color: #357ebd;
+	opacity: 1;
+	padding: 10px 17px;
+	font-size: 27px;
+}
+</style>
+<!-- search style end -->
+
+
+</head>
+	
+<body>
+<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<div class="logo-top">
+				<div class="logo-top-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="900ms">
+					<p>we celebrate the joy of agriculture.</p>
+				</div>
+				<div class="logo-top-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="900ms">
+					<ul>					  
+						<li><div class="ui-widget">
+						<label for="tags">Search: </label>
+						<input id="tags">
+						</div></li>    
+						<!--<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Sign up</li>-->
+						<!--<li><span class="glyphicon glyphicon-send" aria-hidden="true"></span> <a id="modal_trigger" href="#modal" class="btn">Click here to Login or register</a></li>-->
+						<!--<li><button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal">Open Modal</button></li>-->
+						<li><span class="glyphicon glyphicon-send" aria-hidden="true"></span> <a href="" data-toggle="modal" data-target="#myModal">Log In</a></li>
+						<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <a href="" data-toggle="modal" data-target="#myModaltwo">Sign Up</a></li>
+						<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:info@example.com">info@example.com</a></li>
+						<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +1234 567 891</li>
+						<li><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Get Our Mobile App</li>
+						
+						
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="logo">
+				<h1 class="animated wow zoomIn" data-wow-duration="1000ms" data-wow-delay="500ms"><a href="index.html">Sma<span>r</span>ter Farm</a></h1>
+			</div>
+			<div class="navigation animated wow zoomIn" data-wow-duration="1000ms" data-wow-delay="500ms">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+						<nav>
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="#about" class="scroll">About Us</a></li>
+								<li><a href="#services" class="scroll">Services</a></li>
+								<li><a href="#gallery" class="scroll">Gallery</a></li>
+								<li><a href="#mail" class="scroll">Mail Us</a></li>
+								<!--<li><a id="modal_trigger" href="#modal" class="btn">Click here to Login or register</a></li>-->
+								<li></button></li>
+								
+							</ul>
+						</nav>
+					</div>
+					<div class="centralize">
+					<p><button type="button" class="btn btn-info"><a href="#getstarted" class="scroll">Get Started</a>
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span> <a href="" data-toggle="modal" data-target="#myModalthree">FeedBack</a></p>				
+					</div>
+					<!-- /.navbar-collapse -->
+				</nav>
+				
+				
+				
+			</div>
+			<div class="social-icons-gallery animated wow bounceInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+				<ul class="social-icons">
+					<li><a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a></li>
+					<li><a href="#" class="icon-button google"><i class="icon-google"></i><span></span></a></li>
+					<li><a href="#" class="icon-button v"><i class="icon-v"></i><span></span></a></li>
+					<li><a href="#" class="icon-button pinterest"><i class="pinterest"></i><span></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
+<!--search-->
+<div id="search">
+    <button type="button" class="close">×</button>
+    <form>
+        <input type="search" value="" placeholder="type keyword(s) here" />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+<!--search end-->
+
+
+<!-- sign in 
+
+       
+        <div id="modal" class="popupContainer" style="display:none;">
+                <header class="popupHeader">
+                        <span class="header_title">Login</span>
+                        <span class="modal_close"><i class="fa fa-times"></i></span>
+                </header>
+
+                <section class="popupBody">-->
+                        <!-- Social Login 
+                        <div class="social_login">
+                                <div class="">
+                                        <a href="#" class="social_box fb">
+                                                <span class="icon"><i class="fa fa-facebook"></i></span>
+                                                <span class="icon_title">Connect with Facebook</span>
+
+                                        </a>
+
+                                        <a href="#" class="social_box google">
+                                                <span class="icon"><i class="fa fa-google-plus"></i></span>
+                                                <span class="icon_title">Connect with Google</span>
+                                        </a>
+                                </div>
+
+                                <div class="centeredText">
+                                        <span>Or use your Email address</span>
+                                </div>
+
+                                <div class="action_btns">
+                                        <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                                        <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+                                </div>
+                        </div>-->
+
+                        <!-- Username & Password Login form 
+                        <div class="user_login">
+                                <form>
+                                        <label>Email / Username</label>
+                                        <input type="text" />
+                                        <br />
+
+                                        <label>Password</label>
+                                        <input type="password" />
+                                        <br />
+
+                                        <div class="checkbox">
+                                                <input id="remember" type="checkbox" />
+                                                <label for="remember">Remember me on this computer</label>
+                                        </div>
+
+                                        <div class="action_btns">
+                                                <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                                                <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                                        </div>
+                                </form>
+
+                                <a href="#" class="forgot_password">Forgot password?</a>
+                        </div>-->
+
+                        <!-- Register Form 
+                        <div class="user_register">
+                                <form>
+                                        <label>Full Name</label>
+                                        <input type="text" />
+                                        <br />
+
+                                        <label>Email Address</label>
+                                        <input type="email" />
+                                        <br />
+
+                                        <label>Password</label>
+                                        <input type="password" />
+                                        <br />
+
+                                        <div class="checkbox">
+                                                <input id="send_updates" type="checkbox" />
+                                                <label for="send_updates">Send me occasional email updates</label>
+                                        </div>
+
+                                        <div class="action_btns">
+                                                <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                                                <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                                        </div>
+                                </form>
+                        </div>
+                </section>
+        </div>-->
+
+
+<!-- sign in end -->
+
+
+
+<!--modal box-->
+
+<div class="container">
+  
+  <!-- Trigger the modal with a button -->
+  <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="myModalthree" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Smarter Farm</h4>
+        </div>
+        <div class="modal-body">
+          <img src="images/feedback.PNG" alt=" " class="img-responsive" />
+		  <select>
+			<option value="Browse Products">Browse Products</option>
+			<option value="Blogs">Blogs</option>
+			<option value="Services">Services</option>
+			<option value="Monitoring Pages">Monitoring Pages</option>
+			<option value="Dashboard">Dashboard</option>
+		  </select>
+		</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<!-- modal box end-->
+
+
+
+
+
+
+
+<!--modal box-->
+
+<div class="container">
+  
+  <!-- Trigger the modal with a button -->
+  <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="myModaltwo" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          
+		   <div class="hold-transition register-page">
+<div class="register-box">
+  <div class="register-logo">
+    <a href="index2.html"><b>Admin</b>LTE</a>
+  </div>
+
+  <div class="register-box-body">
+    <p class="login-box-msg">Register a new membership</p>
+
+    <form action="index.html" method="post">
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="Full name" required>
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="email" class="form-control" placeholder="Email" required>
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" placeholder="Password" required>
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" placeholder="Retype password" required>
+        <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+      </div>
+      <div class="row">
+        <div class="col-xs-8">
+          <div class="checkbox icheck">
+            <label>
+              <input type="checkbox"> I agree to the <a href="#">terms</a>
+            </label>
+          </div>
+        </div>
+        <!-- /.col -->
+        <div class="col-xs-4">
+          <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+    <div class="social-auth-links text-center">
+      <p>- OR -</p>
+      <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign up using
+        Facebook</a>
+      <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign up using
+        Google+</a>
+    </div>
+
+    <a href="login.html" class="text-center">I already have a membership</a>
+  </div>
+  <!-- /.form-box -->
+</div>
+			
+		  
+		  
+		  
+		  
+		  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<!-- modal box end-->
+
+
+
+
+
+
+
+
+<!--modal box-->
+
+<div class="container">
+  
+  <!-- Trigger the modal with a button -->
+  <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          
+		   
+
+                <section class="popupBody">
+                        <!-- Social Login -->
+                        <div class="social_login">
+                <div class="login-box">
+				<div class="login-logo">
+					<h2><b>Smarter Farm</b></h2>
+				</div>
+				<!-- /.login-logo -->
+				<div class="login-box-body">
+				<p class="login-box-msg">Sign in to start your session</p>
+				<form name="LoginForm" action="dashboard/index2.html" method="post">
+					<div class="form-group has-feedback">
+					<input type="email" name="email" class="form-control" placeholder="Email" required>
+					<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+				</div>
+				<div class="form-group has-feedback">
+				<input type="password" title="Password must contain at least 8 characters, including UPPER/lowercase and numbers" class="form-control" placeholder="Password" required>
+				<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+				</div>
+			<div class="row">
+			<div class="col-xs-8">
+			<div class="checkbox icheck">
+            <label>
+              <input type="checkbox"> Remember Me
+            </label>
+          </div>
+        </div>
+        <!-- /.col -->
+        <div class="col-xs-4">
+          <button type="submit" class="btn btn-primary btn-block btn-flat"><a href="dashboard/index2.html">Sign In</a></button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+    <div class="social-auth-links text-center">
+      <p>- OR -</p>
+      <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
+        Facebook</a>
+      <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
+        Google+</a>
+    </div>
+    <!-- /.social-auth-links -->
+
+    <a href="#">I forgot my password</a><br>
+    <a href="register.html" class="text-center">Register a new membership</a>
+
+  </div>
+  <!-- /.login-box-body -->
+						</div>
+						<!-- /.login-box -->     
+                        </div>
+			</section>
+      
+		  
+		  
+		  
+		  
+		  
+		  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<!-- modal box end-->
+
+
+<!-- sign in -->
+        <div id="modal" class="popupContainer" style="display:none;">
+                <header class="popupHeader">
+                        <span class="header_title">Login</span>
+                        <span class="modal_close"><i class="fa fa-times"></i></span>
+                </header>
+
+                <section class="popupBody">
+                        <!-- Social Login -->
+                        <div class="social_login">
+                <div class="login-box">
+				<div class="login-logo">
+					<h2><b>Smarter Farm</b></h2>
+				</div>
+				<!-- /.login-logo -->
+				<div class="login-box-body">
+				<p class="login-box-msg">Sign in to start your session</p>
+				<form name="LoginForm" action="../../userdashboard.html" onsubmit="return validateForm()" method="post">
+					<div class="form-group has-feedback">
+					<input type="email" name="email" class="form-control" placeholder="Email" required>
+					<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+				</div>
+				<div class="form-group has-feedback">
+				<input type="password" title="Password must contain at least 8 characters, including UPPER/lowercase and numbers" class="form-control" placeholder="Password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"  required>
+				<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+				</div>
+			<div class="row">
+			<div class="col-xs-8">
+			<div class="checkbox icheck">
+            <label>
+              <input type="checkbox"> Remember Me
+            </label>
+          </div>
+        </div>
+        <!-- /.col -->
+        <div class="col-xs-4">
+          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+    <div class="social-auth-links text-center">
+      <p>- OR -</p>
+      <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
+        Facebook</a>
+      <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
+        Google+</a>
+    </div>
+    <!-- /.social-auth-links -->
+
+    <a href="#">I forgot my password</a><br>
+    <a href="register.html" class="text-center">Register a new membership</a>
+
+  </div>
+  <!-- /.login-box-body -->
+						</div>
+						<!-- /.login-box -->     
+                        </div>
+			</section>
+        </div>
+<!-- sign in end -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- banner-bottom -->
+	<div class="banner-bottom" id="getstarted">
+		<div class="container">
+			<div class="banner-bottom-top animated wow flash" data-wow-duration="1000ms" data-wow-delay="800ms">
+				<span></span>
+			</div>
+			<h2 class="animated wow slideInUp" data-wow-duration="1000ms" data-wow-delay="800ms">make your garden look like <span>Paradise</span></h2>
+			<div class="banner-bottom-grids">
+				<h3 class="animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="800ms"><i>Smarter Farm IS YOUR STRATEGIC DECISION-MAKING TOOLKIT. Smarter Farm is a combination of local agronomy and class leading technologies to help you farm smarter, stay informed, and easily manage all your field information.</i></h3>
+				
+				<div class="col-md-4 services-grid animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="800ms">
+					<div class="services-grid1">
+						<div class="services-grid1-sub">
+							<span></span>
+						</div>
+						<h4>Add a Farm</h4>
+						<p>Our easy to use field mapping software allows users to draw field boundaries online or with GPS enabled mobile devices.</p>
+					</div>
+				</div>
+				<div class="col-md-4 services-grid animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
+					<div class="services-grid1">
+						<div class="services-grid1-sub1">
+							<span></span>
+						</div>
+						<h4>Add a Device</h4>
+						<p>Smarter Farm gives you the ability to improve your farm record keeping, whether entered on a computer or mobile device.</p>
+					</div>
+				</div>
+				<div class="col-md-4 services-grid animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="800ms">
+					<div class="services-grid1">
+						<div class="services-grid1-sub2">
+							<span></span>
+						</div>
+						<h4>Start Monitoring</h4>
+						<p>It supports GPS tracking, farm and field mapping software, performance monitoring and unlimited data storage.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+				
+				
+				
+			</div>
+		</div>
+	</div>
+<!-- //banner-bottom -->
+<!-- about -->
+	<div class="about" id="about">	
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-duration="1000ms" data-wow-delay="500ms">About Us</h3>
+			<p class="dolor dolor1 animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="800ms">Smarter Farm combines field-specific data with our agronomists’ knowledge for a strategic decision-making toolkit to maximize our customers’ return on investment.</p>
+			<div class="about-grids">
+				<div class="col-md-6 about-grid animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="800ms">
+					<figure class="block-1">
+					  <div class="thumbs">
+						<a href="index.html" class="btn">Take Control</a>
+						<img src="images/software.PNG" alt=" " class="img-responsive" />
+					  </div>
+						<figcaption>
+						<span>Transitioning agriculture with fast-paced technology</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6 about-grid animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="800ms">
+					<h4>IT’S MORE THAN SOFTWARE</h4>
+					<p>At Wilbur-Ellis, we combine local agronomy and food system expertise with class leading technologies to help you farm smarter, stay informed, and easily manage all of your field information. To us, it’s about more than software. It’s about managing total farm performance.</p>
+					<div class="bar-one bar-con">
+							<div class="bar" data-percent="20"></div>
+						</div>
+
+					  <div class="bar-two bar-con">
+						<div class="bar" data-percent="50"></div>
+					  </div>
+
+					  <div class="bar-three bar-con">
+						<div class="bar" data-percent="70"></div>
+					  </div>
+					<script>
+						(function ( $ ) {
+							  $.fn.progress = function() {
+								var percent = this.data("percent");
+								this.css("width", percent+"%");
+							  };
+							}( jQuery ));
+
+							$(document).ready(function(){
+							  $(".bar-one .bar").progress();
+							  $(".bar-two .bar").progress();
+							  $(".bar-three .bar").progress();
+							});
+					</script>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //about -->
+<!-- about-bottom -->
+	<div class="about-bottom">
+		<div class="col-md-9 about-bottom-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="800ms">
+			<h3>OWN YOUR OWN DATA</h3>
+			<p>Data from AgVerdict can be exported, by growers, for electronic or print submissions. These reports can then be sent to regulators, GAP programs, or end-users. Your agronomic data is always secure, available, and our top priority. Your information will never be released to a third party, and we constantly monitor potential security risks.</p>
+		</div>
+		<div class="col-md-3 about-bottom-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="800ms">
+			<div class="grid">
+				<figure class="effect-julia">
+					<img src="images/5.jpg" alt=" " class="img-responsive" />
+					<figcaption>
+						<h3>Agriculture <span>Portal</span></h3>
+						<div>
+							<p>Our user-friendly interface is easy</p> 
+							<p>to use and completely customizable.</p>
+							<p>It supports GPS tracking, farm and field mapping software</p>
+							<p>in a cloud-based system for easy access anywhere.</p>
+						</div>
+					</figcaption>			
+				</figure>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- //about-bottom -->
+<!-- services -->
+	<div class="services" id="services">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-duration="1000ms" data-wow-delay="500ms">Services</h3>
+			<p class="dolor animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="800ms">Smarter Farm combines local agronomists’ knowledge with precision farming technology to create solutions which will prove indispensable to the success of your operation.</p>
+			<div class="services-grids">
+				
+				<div class="col-md-4 banner-bottom-grid animated wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="500ms">
+					 <div id="box" class="burst-circle teal">
+						<div class="caption"></div>
+						<img src="images/1.jpg" class="img-responsive" />
+						<a class="btn btn-warning" href="browse-product.html"><h4>Browse Products</h4></a>
+					</div>
+					<p> We offer different packages including devices like sensors for monitoring farms and drones to sprinkle water and add fertilizers.</p>
+				</div>
+				<div class="col-md-4 banner-bottom-grid animated wow fadeInUpBig" data-wow-duration="1000ms" data-wow-delay="500ms">
+					 <div id="box" class="burst-circle teal">
+						<div class="caption"></div>
+						<img src="images/2.jpg" class="img-responsive" />
+						<button type="button" class="btn btn-info"><a class="btn btn-warning" data-popup-open="unit-convertor" href="#"><h4>Unit Convertor</h4></a></button>
+
+					</div>
+					<p>Unit converter is a tool in the extended set of the Smart Tools collection. This online unit conversion tool will help you convert measurement units anytime and help get accurate results.</p>
+				</div>
+				<div class="col-md-4 banner-bottom-grid animated wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
+					 <div id="box" class="burst-circle teal">
+						<div class="caption"></div>
+						<img src="images/3.jpg" class="img-responsive" />
+						<a class="btn btn-warning" href="Blogs.html"><h4>Blogs</h4></a>
+					</div>
+					<p>Co-founded by a team of technologists and agriculture industry professionals, Smarter Farm offers a one-stop-shop for learning about the intersection of agriculture and technology </p>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+	</div>
+<!-- //services -->
+<!-- services-bottom -->
+	<div class="services-bottom">
+		<div class="container">
+			<div class="services-bottom-info animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="800ms">
+				<div class="services-bottom-info1">
+					<span></span>
+				</div>
+				<h3><i>SMARTER FARM AGRONOMY SERVICES</i></h3>
+				<p>AgVerdict combines local agronomists’ knowledge with precision farming technology to create solutions which will prove indispensable to the success of your operation.</p>
+				<div class="services-bottom-info-pos">
+					<img src="images/1.png" alt=" " class="img-responsive" />
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //services-bottom -->
+<!-- gallery -->
+	<div class="gallery" id="gallery">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-duration="1000ms" data-wow-delay="500ms">Photo Gallery</h3>
+			<p class="dolor animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="800ms">AgVerdict combines field-specific data with our agronomists knowledge for a strategic decision</p>
+			<div class="gallery-grids">
+				<div class="gallery-grid animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<a href="images/2.jpg" class="b-link-stripe b-animate-go  swipebox" title="Farmhand">
+						<img src="images/2.jpg" class="img-responsive" alt="" />
+						<div class="textbox">
+							<h4>All Agronomy is local</h4>
+							<p>Whether it’s planning for your selecting hybrids or crop rotation you rely on local experts to help you grow more.</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery-grid1 animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<a href="images/7.jpg" class="b-link-stripe b-animate-go  swipebox" title="Farmhand">
+						<img src="images/7.jpg" class="img-responsive" alt="" />
+						<div class="textbox textbox1">
+							<h4>FIELD MAPPING</h4>
+							<p>Our field mapping software allows to draw field boundaries with GPS enabled devices.</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery-grid animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<a href="images/4.jpg" class="b-link-stripe b-animate-go  swipebox" title="Farmhand">
+						<img src="images/4.jpg" class="img-responsive" alt="" />
+						<div class="textbox">
+							<h4>REMOTE SENSING </h4>
+							<p>Our agronomy technology allows you to store imagery and spatial data from your fields.</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery-grid1 animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<a href="images/8.jpg" class="b-link-stripe b-animate-go  swipebox" title="Farmhand">
+						<img src="images/8.jpg" class="img-responsive" alt="" />
+						<div class="textbox textbox1">
+							<h4>SITE-SPECIFIC ANALYSIS</h4>
+							<p>Understanding crop vigor in each field to knowing the exact yield.</p>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="gallery-grids">
+				<div class="gallery-grid1 animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<a href="images/7.jpg" class="b-link-stripe b-animate-go  swipebox" title="Farmhand">
+						<img src="images/7.jpg" class="img-responsive" alt="" />
+						<div class="textbox textbox1">
+							<h4>MANAGING PLANT NUTRITION</h4>
+							<p>Record Plant Growth and Growth Stage.</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery-grid1 animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<a href="images/8.jpg" class="b-link-stripe b-animate-go  swipebox" title="Farmhand">
+						<img src="images/8.jpg" class="img-responsive" alt="" />
+						<div class="textbox textbox1">
+							<h4>SCOUTING YOUR FIELDS</h4>
+							<p>Record Pests and pinpoint the location in a field.</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery-grid animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<a href="images/11.jpg" class="b-link-stripe b-animate-go  swipebox" title="Farmhand">
+						<img src="images/11.jpg" class="img-responsive" alt="" />
+						<div class="textbox">
+							
+							<h4>SOIL ANALYSIS</h4>
+							<p>The system integrates seamlessly with your soil lab, delivering results directly to back to your fields in the system.</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery-grid animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<a href="images/12.jpg" class="b-link-stripe b-animate-go  swipebox" title="Farmhand">
+						<img src="images/12.jpg" class="img-responsive" alt="" />
+						<div class="textbox">
+							
+							<h4>SOIL SAMPLING</h4>
+							<p>A soil test will reveal the current nutrient status of your fields or zones, and provide timely indications of required fertilizer needs.</p>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="gallery-grids">
+				<div class="gallery-grid animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<a href="images/3.jpg" class="b-link-stripe b-animate-go  swipebox" title="Farmhand">
+						<img src="images/3.jpg" class="img-responsive" alt="" />
+						<div class="textbox">
+							
+							<h4>VARIABLE RATE APPLICATION</h4>
+							<p>Completed recommendations are stored electronically and can easily be e-mailed to growers or applicators.</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery-grid1 animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<a href="images/9.jpg" class="b-link-stripe b-animate-go  swipebox" title="Farmhand">
+						<img src="images/9.jpg" class="img-responsive" alt="" />
+						<div class="textbox textbox1">
+							<h4>MANAGING FIELD APPLICATIONS</h4>
+							<p>Make field notes with specific locations.</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery-grid animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<a href="images/1.jpg" class="b-link-stripe b-animate-go  swipebox" title="Farmhand">
+						<img src="images/1.jpg" class="img-responsive" alt="" />
+						<div class="textbox">
+							
+							<h4>SEASON LONG RECORD KEEPING</h4>
+							<p>The best decisions are based on history. AgVerdict has a place to store every event that occurs in the field.</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery-grid1 animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<a href="images/10.jpg" class="b-link-stripe b-animate-go  swipebox" title="Farmhand">
+						<img src="images/10.jpg" class="img-responsive" alt="" />
+						<div class="textbox textbox1">
+							<h4>PRODUCT USE REPORTING</h4>
+							<p>Send reports from a mobile device.</p>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+				<!-- script-for-swipebox -->
+					<link rel="stylesheet" href="css/swipebox.css">
+					<script src="js/jquery.swipebox.min.js"></script> 
+						<script type="text/javascript">
+							jQuery(function($) {
+								$(".swipebox").swipebox();
+							});
+						</script>
+				<!-- //script-for-swipebox -->
+		</div>
+	</div>
+<!-- //gallery -->
+<!-- mail -->
+	<div class="mail" id="mail">
+		<iframe class="animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.9579945977393!2d-73.87657738464283!3d40.806916839740346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f510a78ff341%3A0xe5b1e682c2e91238!2sNYS+Agriculture+%26+Markets!5e0!3m2!1sen!2sin!4v1456403781501" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-duration="1000ms" data-wow-delay="500ms">Mail Us</h3>
+			<p class="dolor animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="800ms">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+			<div class="mail-grids">
+				<div class="col-md-4 mail-grid animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<div class="mail-grid1">
+						<i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
+						<h4>Address</h4>
+						<p>12K Street, 45 Building Road <span>New York City.</span></p>
+					</div>
+				</div>
+				<div class="col-md-4 mail-grid animated wow slideInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<div class="mail-grid1">
+						<i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+						<h4>Call Us</h4>
+						<p>+1234 758 839<span>+1273 748 730</span></p>
+					</div>
+				</div>
+				<div class="col-md-4 mail-grid animated wow slideInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<div class="mail-grid1">
+						<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+						<h4>Mail Us</h4>
+						<p><a href="mailto:info@example.com">info@example1.com</a><span><a href="mailto:info@example.com">info@example2.com</a></span></p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="mail-grids1">
+				<div class="col-md-6 mail-grids1-sub animated wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<div class="mail-grids1-sub1">
+						<div class="mail-grids1-sub1-grid">
+							<h4>Name</h4>
+							<form>
+								<input type="text" value=" " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' ';}" required="">
+							</form>
+						</div>
+						<div class="mail-grids1-sub1-grid">
+							<h4>Website</h4>
+							<form>
+								<input type="text" value=" " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' ';}" required="">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 mail-grids1-sub animated wow slideInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<div class="mail-grids1-sub1">
+						<div class="mail-grids1-sub1-grid">
+							<h4>Email</h4>
+							<form>
+								<input type="email" value=" " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' ';}" required="">
+							</form>
+						</div>
+						<div class="mail-grids1-sub1-grid">
+							<h4>Subject</h4>
+							<form>
+								<input type="text" value=" " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' ';}" required="">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+				<div class="mail-grids1-sub1-grid mail-grids1-sub1-grid-textarea animated wow slideInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<h4>Message</h4>
+					<form>
+						<textarea type="text"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' ';}" required=""> </textarea>
+						<input type="submit" value="Submit   Enquiry/Feedback" >
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //mail -->
+
+
+
+
+<!-- footer -->
+	<div class="footer animated wow lightSpeedIn" data-wow-duration="1000ms" data-wow-delay="500ms">
+		<div class="container">
+			<div class="footer-grid">
+				<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+				<h3><span>Connect</span> Subscribe To Newsletter</h3>
+				<form>
+					<input type="email" value="Enter your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email address';}" required="">
+					<input type="submit" value="Send" >
+				</form>
+			</div>
+			<div class="footer-grid-logo">
+				<h3><a href="index.html"><span></span>Smarter Farm</a></h3>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copy animated wow slideInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+		<div class="container">
+		
+			<p>Career &nbsp;&nbsp;&nbsp;&nbsp; Terms and Policies &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+<select>
+  <option value="English">English</option>
+  <option value="Espanol">Espanol</option>
+  <option value="Franci$">Franci$</option>
+</select></p>
+
+			<p>&copy 2016 Smarter Farm. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+		</div>
+	</div>
+<!-- //footer -->
+
+
+
+
+
+
+<!--search
+<div id="search">
+    <button type="button" class="close">×</button>
+    <form>
+	<div class="ui-widget">
+        <input type="search" id="autocomplete" value="" placeholder="type keyword(s) here" />
+        <button type="submit" class="btn btn-primary">Search</button>
+		
+
+		
+		
+    </form>
+</div>-->
+<!--search end-->
+
+
+
+
+
+
+
+
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+
+
+<!-- unit-convertor popup -->
+ 
+<div class="popup" data-popup="unit-convertor" id="unit-convertor">
+    <div class="popup-inner">
+        <h2>Unit Convertor</h2>
+        <div style="width:298px;margin:0px auto;"><div style="width:99.5%;border:1px solid #1F2124;border-top:none;border-bottom:none;text-align:center; height:24px;font-size:16px;padding:5px 0px 0px 0px;border-top-right-radius:5px; border-top-left-radius:5px;background-color:#0C7009;color:##FFFFFF; font-weight:bold;"><a href="http://www.theunitconverter.com/length-conversion/" style="text-decoration:none;">Unit Converter</a></div><script type="text/javascript" src="http://ww.theunitconverter.com/converter.php?l=en&c=0&a=FFFFFF&b=1F2124&s=length"></script></div>
+        <p><a data-popup-close="unit-convertor" href="#">Close</a></p>
+        <a class="popup-close" data-popup-close="unit-convertor" href="#">x</a>
+    </div>
+</div>
+<!---unit-convertor end -->
+
+
+
+
+
+
+</body>
+</html>
